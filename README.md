@@ -14,29 +14,6 @@ This is an IT audit case study based on a jp-morgan data breach that happened in
 ---
 
 ## 2. Root Cause & Audit Deficiencies (Control Gaps)
-**Delete all of the `[cite: 1]` tags.**
-
-Those were internal footnote references marking data taken from your seminar handout document.
-
-You definitely do not want those showing up on your public GitHub repository or CV. Just delete every instance of `[cite: 1]` so the text reads smoothly as standard professional prose.
-
-Here is the cleaned version with all of them stripped out so you can copy and paste directly:
-
-```markdown
-# IT Audit & Control Remediation Case Study: JPMorgan Chase Data Breach
-
-## 1. Executive Summary & Incident Overview
-* **Target / Environment:** JPMorgan Chase corporate network infrastructure.
-* **Attack Timeline:** Initial intrusion traced back as early as April/June 2014; full discovery and containment completed August/October 2014.
-* **Scope of Impact:** Compromise of 90+ internal servers; exposure of personally identifiable information (PII) including names, addresses, phone numbers, email addresses, and internal customer categorization data (mortgage, credit card, private banking) affecting 76 million households and 7 million small businesses.
-* **Impact Analysis (CIA Triad):**
-  * **Confidentiality (High Breach):** Bulk exfiltration of gigabytes of customer PII and internal system architecture metadata (lists of running applications and internal software programs).
-  * **Integrity (High Compromise):** Adversaries acquired root/domain administrator privileges and actively deleted/altered security and system event logs to evade detection.
-  * **Availability (Low Direct Impact):** Production banking systems remained online; customer funds and direct transactional accounts were not disrupted.
-
----
-
-## 2. Root Cause & Audit Deficiencies (Control Gaps)
 
 * **Finding 01 — Inconsistent Multi-Factor Authentication (MFA) Implementation:** 
   * *Audit Finding:* While enterprise-wide 2FA had been procured, a single overlooked network server connected to the VPN gateway failed to receive the two-factor authentication update.
